@@ -1,0 +1,29 @@
+{
+  "name": "@harnesskit/providers",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Model providers for harnesskit — Ollama, Together.ai, and more.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@harnesskit/core": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0"
+  },
+  "license": "MIT"
+}
